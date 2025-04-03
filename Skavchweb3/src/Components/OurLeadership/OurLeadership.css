@@ -1,0 +1,52 @@
+.leadership-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0C4160;
+    color: white;
+}
+
+.leadership-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Flexbox to align leaders in a row */
+.leaders {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual leader styles */
+.leader {
+    text-align: center;
+    max-width: 300px;
+}
+
+.leader img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Social media icons styling */
+.social-icons {
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
