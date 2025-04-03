@@ -1,0 +1,81 @@
+.work-container {
+    display: flex;
+    background-color: #E5EAEB;
+    color: rgb(4, 4, 4);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    margin-left: 100px;
+  }
+  
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 70px;
+    margin-left: 90px;
+  }
+  
+  .right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text {
+    color: #17BACF;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  
+  button {
+    background-color: #E5EAEB;  
+    border: 2px solid grey;
+    color: #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+  }
+  
+  button:hover {
+    background-color: #3f75a0;
+    color: black;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  .social-icons svg {
+    color: #17BACF;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons svg:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Phone & Email Styling */
+  .label {
+    color: #17BACF;
+    font-weight: bold;
+  }
+  
+  .info {
+    color: black;
+  }
+  
