@@ -1,11 +1,11 @@
 import './App.css'
-import {OurLeadership} from "./Components/OurLeadership/OurLeadership"
-import {WorkTogether} from "./Components/WorkTogether/WorkTogether"
+
+import Header from './Components/Header/Header'
+
 function App() {
   return (
     <>
-        <OurLeadership />
-        <WorkTogether />
+      <Header/>
     </>
   )
 }

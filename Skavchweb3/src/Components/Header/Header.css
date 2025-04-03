@@ -1,0 +1,162 @@
+.homepage {
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: cyan;
+}
+
+.logo {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: cyan;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
+}
+
+.nav-links a:hover {
+    color: lightcyan;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: black;
+    margin-top: 0%;
+    padding: 1rem;
+    text-align: center;
+}
+.hero-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    max-width: 90%;
+}
+
+/* Play Button */
+.play-button {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.play-icon {
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* Industries Section */
+.industries-section {
+    background-color:var(--color-lightlue);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.industries-section h2 {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    margin-bottom: 2rem;
+    color: black;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Grid Layout */
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Industry Item Animation */
+.industry-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: floatIn 1.2s ease-in-out forwards;
+}
+
+.industry-item p {
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
+}
+
+/* Staggered Animation */
+.industry-item:nth-child(1) { animation-delay: 0.2s; }
+.industry-item:nth-child(2) { animation-delay: 0.4s; }
+.industry-item:nth-child(3) { animation-delay: 0.6s; }
+.industry-item:nth-child(4) { animation-delay: 0.8s; }
+.industry-item:nth-child(5) { animation-delay: 1s; }
+
+/* Industry Icon Effect */
+.industry-icon {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.industry-item:hover .industry-icon {
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes floatIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .industries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
