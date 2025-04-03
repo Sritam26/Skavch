@@ -1,0 +1,83 @@
+.growth-section {
+  padding: 43px;
+  background-color: var(--color-blue);   
+    color: var(--color-offwhite50percent);   
+  text-align: center;
+}
+
+.growth-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.counter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 97px;
+  flex-wrap: wrap;
+}
+
+.counter-container {
+  text-align: center;
+  min-width: 150px;
+}
+
+.stat {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1.2em;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .growth-section {
+    padding: 30px 15px; /* Adjust padding for better spacing */
+  }
+
+  .growth-container {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Remove max-width restriction */
+  }
+
+  h2 {
+    font-size: 1.8em; /* Slightly smaller font */
+    margin-bottom: 15px; /* Reduce margin */
+  }
+
+  .counter-wrapper {
+    flex-direction: column; /* Stack stats vertically */
+    gap: 10px; /* Adjust gap */
+  }
+
+  .counter-container {
+    min-width: auto; /* Adjust width */
+    width: 100%; /* Full width */
+  }
+
+  .stat {
+    font-size: 2em; /* Adjust stat font size */
+  }
+
+  .label {
+    font-size: 1em; /* Adjust label font size */
+  }
+  .growth-section {
+    padding: 1px;
+    background-color: var(--color-blue);   
+      color: var(--color-offwhite50percent);   
+    text-align: center;
+  }
+}
+
